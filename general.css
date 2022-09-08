@@ -1,0 +1,144 @@
+/*font 1*/
+* {
+  outline: 1px solid red;
+}
+@font-face {
+  font-family: "font_1";
+  src: url("fonts/stixtwotext.woff2") format("woff2");
+}
+
+/* font 2 */
+@font-face {
+  font-family: "font_2";
+  src: url("fonts/averiaseriflibre-regular-webfont.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*
+    width: 1200px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+    */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: font_1;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #2d2d2d;
+}
+
+/* sørger for at bileldet opføre sig efter hensigten*/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box-landing {
+  /* denne styre min box på landingpage, for at jeg kan indrykke tekst og billede seperat fra baggrunden  d. 01.09*/
+  padding: 0px;
+  margin: 50px;
+  text-align: left;
+  margin-bottom: 50px;
+  color: white;
+  max-width: 1200px;
+
+  /* Justify-content: center;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+}
+
+.color1 {
+  /*denne styre udelukkende min bagrundsfarve på landingpage, for at kunne indele siden, så den er lettere læselig  d. 01.09*/
+  background-color: #33021bdc;
+  padding-block: 100px;
+}
+.minpa-landing {
+  background-color: rgb(3, 19, 54);
+  padding-block: 100px;
+}
+.gab {
+  padding-bottom: 10px;
+}
+
+/*
+  .mobile{
+    max-width: 400px;
+    margin-inline: auto;
+  }
+  */
+
+.mobile {
+  width: 1200px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mobile p {
+  margin-block: 15px;
+  color: #4b4b4b;
+}
+.mobile > div {
+  padding: 10px;
+}
+body {
+  background-color: #f5f5f5;
+}
+
+p,
+ul,
+ol {
+  font-family: font_2;
+}
+/*
+p.gab {
+  color: white;
+}
+*/
+main {
+  padding: 5px;
+  /*margin i bunden af mine overskrifter*/
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+footer {
+  text-align: center;
+  margin-block: 20px;
+}
+
+a {
+  color: blue;
+}
+.cta {
+  padding: 7px 15px;
+  background-color: greenyellow;
+  display: inline-block;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: font_1;
+  text-decoration: none;
+}
+/*hvorfor må jeg ikke ændre værdien af h1?
+  h1{
+    font-weight: 2rem;
+  }*/
